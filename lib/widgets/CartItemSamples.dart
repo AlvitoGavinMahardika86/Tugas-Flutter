@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../utils/formatters.dart';
@@ -20,13 +20,13 @@ class CartItemSamples extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
-                color: const Color(0xFF4C53A5).withValues(alpha: 0.1),
+                color: const Color(0xFF2E7D32).withValues(alpha: 0.1),
                 shape: BoxShape.circle,
               ),
               child: const Icon(
                 Icons.shopping_cart_outlined,
                 size: 64,
-                color: Color(0xFF4C53A5),
+                color: Color(0xFF2E7D32),
               ),
             ),
             const SizedBox(height: 16),
@@ -50,7 +50,7 @@ class CartItemSamples extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, '/');
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF4C53A5),
+                backgroundColor: const Color(0xFF2E7D32),
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 shape: RoundedRectangleBorder(
@@ -90,7 +90,7 @@ class CartItemSamples extends StatelessWidget {
               // Checkbox
               Checkbox(
                 value: cartItem.isSelected,
-                activeColor: const Color(0xFF4C53A5),
+                activeColor: const Color(0xFF2E7D32),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),
@@ -148,7 +148,7 @@ class CartItemSamples extends StatelessWidget {
                     Text(
                       CurrencyHelper.formatRupiah(cartItem.product.price),
                       style: const TextStyle(
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF2E7D32),
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -188,7 +188,7 @@ class CartItemSamples extends StatelessWidget {
                             child: const Icon(
                               Icons.remove,
                               size: 16,
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                             ),
                           ),
                         ),
@@ -212,7 +212,7 @@ class CartItemSamples extends StatelessWidget {
                             child: const Icon(
                               Icons.add,
                               size: 16,
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                             ),
                           ),
                         ),
@@ -228,3 +228,4 @@ class CartItemSamples extends StatelessWidget {
     );
   }
 }
+

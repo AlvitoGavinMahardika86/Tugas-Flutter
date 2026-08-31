@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../models/notification_model.dart';
@@ -23,7 +23,7 @@ class NotificationsPage extends StatelessWidget {
       case NotificationType.promo:
         return Colors.orange;
       case NotificationType.order:
-        return const Color(0xFF4C53A5);
+        return const Color(0xFF2E7D32);
       case NotificationType.info:
         return Colors.teal;
     }
@@ -57,7 +57,7 @@ class NotificationsPage extends StatelessWidget {
               child: const Text(
                 'Tandai Dibaca',
                 style: TextStyle(
-                  color: Color(0xFF4C53A5),
+                  color: Color(0xFF2E7D32),
                   fontWeight: FontWeight.bold,
                   fontSize: 13,
                 ),
@@ -105,12 +105,12 @@ class NotificationsPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: notif.isRead
                           ? Colors.white
-                          : const Color(0xFF4C53A5).withValues(alpha: 0.05),
+                          : const Color(0xFF2E7D32).withValues(alpha: 0.05),
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
                         color: notif.isRead
                             ? Colors.grey.shade200
-                            : const Color(0xFF4C53A5).withValues(alpha: 0.2),
+                            : const Color(0xFF2E7D32).withValues(alpha: 0.2),
                       ),
                       boxShadow: [
                         BoxShadow(
@@ -196,3 +196,4 @@ class NotificationsPage extends StatelessWidget {
     );
   }
 }
+

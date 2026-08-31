@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../widgets/CartAppBar.dart';
 import '../widgets/CartBottomNavbar.dart';
@@ -85,8 +85,8 @@ class CartPage extends StatelessWidget {
                           SnackBar(
                             content: Text(
                               success
-                                  ? '🎉 Kupon ${couponInputController.text} berhasil digunakan!'
-                                  : '❌ Kupon tidak valid atau syarat belanja belum tercapai.',
+                                  ? 'ðŸŽ‰ Kupon ${couponInputController.text} berhasil digunakan!'
+                                  : 'âŒ Kupon tidak valid atau syarat belanja belum tercapai.',
                             ),
                             backgroundColor:
                                 success ? Colors.green : Colors.redAccent,
@@ -95,7 +95,7 @@ class CartPage extends StatelessWidget {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF4C53A5),
+                      backgroundColor: const Color(0xFF2E7D32),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 18,
@@ -126,12 +126,12 @@ class CartPage extends StatelessWidget {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: isApplied
-                        ? const Color(0xFF4C53A5).withValues(alpha: 0.08)
+                        ? const Color(0xFF2E7D32).withValues(alpha: 0.08)
                         : Colors.grey.shade50,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: isApplied
-                          ? const Color(0xFF4C53A5)
+                          ? const Color(0xFF2E7D32)
                           : Colors.grey.shade200,
                     ),
                   ),
@@ -140,7 +140,7 @@ class CartPage extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF4C53A5),
+                          color: const Color(0xFF2E7D32),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: const Icon(
@@ -183,8 +183,8 @@ class CartPage extends StatelessWidget {
                               SnackBar(
                                 content: Text(
                                   ok
-                                      ? '🎉 Kupon ${coupon.code} berhasil dipakai!'
-                                      : '❌ Syarat belanja minimal ${CurrencyHelper.formatRupiah(coupon.minPurchase)} belum tercapai.',
+                                      ? 'ðŸŽ‰ Kupon ${coupon.code} berhasil dipakai!'
+                                      : 'âŒ Syarat belanja minimal ${CurrencyHelper.formatRupiah(coupon.minPurchase)} belum tercapai.',
                                 ),
                                 backgroundColor:
                                     ok ? Colors.green : Colors.redAccent,
@@ -195,7 +195,7 @@ class CartPage extends StatelessWidget {
                         child: Text(
                           isApplied ? 'Hapus' : 'Gunakan',
                           style: TextStyle(
-                            color: isApplied ? Colors.red : const Color(0xFF4C53A5),
+                            color: isApplied ? Colors.red : const Color(0xFF2E7D32),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -244,7 +244,7 @@ class CartPage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
-                          color: const Color(0xFF4C53A5).withValues(alpha: 0.3),
+                          color: const Color(0xFF2E7D32).withValues(alpha: 0.3),
                         ),
                         boxShadow: [
                           BoxShadow(
@@ -258,7 +258,7 @@ class CartPage extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(6),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF4C53A5),
+                              color: const Color(0xFF2E7D32),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: const Icon(
@@ -274,7 +274,7 @@ class CartPage extends StatelessWidget {
                                   ? 'Voucher Digunakan: ${appState.appliedCoupon!.code}'
                                   : 'Gunakan / Masukkan Kupon Promo Diskon',
                               style: const TextStyle(
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -283,7 +283,7 @@ class CartPage extends StatelessWidget {
                           const Icon(
                             Icons.arrow_forward_ios,
                             size: 14,
-                            color: Color(0xFF4C53A5),
+                            color: Color(0xFF2E7D32),
                           ),
                         ],
                       ),
@@ -389,7 +389,7 @@ class CartPage extends StatelessWidget {
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                               ),
                             ),
                           ],

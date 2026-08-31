@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../data/dummy_data.dart';
@@ -47,12 +47,12 @@ class CategoriesWidget extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 4),
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
               decoration: BoxDecoration(
-                color: isSelected ? const Color(0xFF4C53A5) : Colors.white,
+                color: isSelected ? const Color(0xFF2E7D32) : Colors.white,
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
                     color: isSelected
-                        ? const Color(0xFF4C53A5).withValues(alpha: 0.3)
+                        ? const Color(0xFF2E7D32).withValues(alpha: 0.3)
                         : Colors.black.withValues(alpha: 0.04),
                     blurRadius: 6,
                     offset: const Offset(0, 2),
@@ -60,7 +60,7 @@ class CategoriesWidget extends StatelessWidget {
                 ],
                 border: Border.all(
                   color: isSelected
-                      ? const Color(0xFF4C53A5)
+                      ? const Color(0xFF2E7D32)
                       : Colors.grey.shade200,
                   width: 1,
                 ),
@@ -70,7 +70,7 @@ class CategoriesWidget extends StatelessWidget {
                   Icon(
                     _getCategoryIcon(cat),
                     size: 18,
-                    color: isSelected ? Colors.white : const Color(0xFF4C53A5),
+                    color: isSelected ? Colors.white : const Color(0xFF2E7D32),
                   ),
                   const SizedBox(width: 6),
                   Text(
@@ -91,3 +91,4 @@ class CategoriesWidget extends StatelessWidget {
     );
   }
 }
+

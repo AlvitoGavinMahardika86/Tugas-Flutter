@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 
@@ -32,7 +32,7 @@ class CartAppBar extends StatelessWidget {
                 ),
                 child: const Icon(
                   Icons.arrow_back_ios_new,
-                  color: Color(0xFF4C53A5),
+                  color: Color(0xFF2E7D32),
                   size: 20,
                 ),
               ),
@@ -68,7 +68,7 @@ class CartAppBar extends StatelessWidget {
                 child: Text(
                   appState.isAllSelected ? 'Batal Semua' : 'Pilih Semua',
                   style: const TextStyle(
-                    color: Color(0xFF4C53A5),
+                    color: Color(0xFF2E7D32),
                     fontWeight: FontWeight.bold,
                     fontSize: 13,
                   ),

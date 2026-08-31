@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 
@@ -60,13 +60,13 @@ class _LoginPageState extends State<LoginPage> {
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF4C53A5).withValues(alpha: 0.25),
+                          color: const Color(0xFF2E7D32).withValues(alpha: 0.25),
                           blurRadius: 20,
                           offset: const Offset(0, 8),
                         ),
                       ],
                       border: Border.all(
-                        color: const Color(0xFF4C53A5),
+                        color: const Color(0xFF2E7D32),
                         width: 3,
                       ),
                     ),
@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: !_isSignUp
-                                      ? const Color(0xFF4C53A5)
+                                      ? const Color(0xFF2E7D32)
                                       : Colors.grey.shade600,
                                 ),
                               ),
@@ -159,7 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: _isSignUp
-                                      ? const Color(0xFF4C53A5)
+                                      ? const Color(0xFF2E7D32)
                                       : Colors.grey.shade600,
                                 ),
                               ),
@@ -244,7 +244,7 @@ class _LoginPageState extends State<LoginPage> {
                         },
                         child: const Text(
                           'Lupa Kata Sandi?',
-                          style: TextStyle(color: Color(0xFF4C53A5), fontSize: 12),
+                          style: TextStyle(color: Color(0xFF2E7D32), fontSize: 12),
                         ),
                       ),
                     ),
@@ -256,7 +256,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: ElevatedButton(
                       onPressed: _submit,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF4C53A5),
+                        backgroundColor: const Color(0xFF2E7D32),
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
                         shape: RoundedRectangleBorder(
@@ -280,7 +280,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text(
                       'Masuk sebagai Tamu (Lihat Produk)',
                       style: TextStyle(
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF2E7D32),
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -321,7 +321,7 @@ class _LoginPageState extends State<LoginPage> {
         validator: validator,
         decoration: InputDecoration(
           labelText: label,
-          prefixIcon: Icon(icon, color: const Color(0xFF4C53A5)),
+          prefixIcon: Icon(icon, color: const Color(0xFF2E7D32)),
           suffixIcon: suffixIcon,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
@@ -333,7 +333,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
-            borderSide: const BorderSide(color: Color(0xFF4C53A5), width: 1.5),
+            borderSide: const BorderSide(color: Color(0xFF2E7D32), width: 1.5),
           ),
         ),
       ),

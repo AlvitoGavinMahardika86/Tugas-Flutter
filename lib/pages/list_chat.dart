@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class ListChatPage extends StatefulWidget {
   const ListChatPage({super.key});
@@ -164,7 +164,7 @@ class _ListChatPageState extends State<ListChatPage> {
                           chat['time'] as String,
                           style: TextStyle(
                             color: unread > 0
-                                ? const Color(0xFF4C53A5)
+                                ? const Color(0xFF2E7D32)
                                 : Colors.grey.shade500,
                             fontSize: 11,
                             fontWeight: unread > 0
@@ -177,7 +177,7 @@ class _ListChatPageState extends State<ListChatPage> {
                           Container(
                             padding: const EdgeInsets.all(5),
                             decoration: const BoxDecoration(
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                               shape: BoxShape.circle,
                             ),
                             child: Text(
@@ -217,7 +217,7 @@ class _ListChatPageState extends State<ListChatPage> {
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
         decoration: BoxDecoration(
           color: isSelected
-              ? const Color(0xFF4C53A5)
+              ? const Color(0xFF2E7D32)
               : Colors.grey.shade100,
           borderRadius: BorderRadius.circular(20),
         ),
@@ -233,3 +233,4 @@ class _ListChatPageState extends State<ListChatPage> {
     );
   }
 }
+

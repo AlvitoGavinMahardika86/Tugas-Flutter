@@ -1,4 +1,4 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'package:flutter/material.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -133,7 +133,7 @@ class _ChatScreenState extends State<ChatScreen> {
       backgroundColor: const Color(0xFFF8F9FE),
       appBar: AppBar(
         titleSpacing: 0,
-        backgroundColor: const Color(0xFF4C53A5),
+        backgroundColor: const Color(0xFF2E7D32),
         foregroundColor: Colors.white,
         elevation: 0,
         title: Row(
@@ -155,7 +155,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     Icon(Icons.circle, color: Colors.greenAccent, size: 8),
                     SizedBox(width: 4),
                     Text(
-                      'Online • Biasanya membalas cepat',
+                      'Online â€¢ Biasanya membalas cepat',
                       style: TextStyle(fontSize: 10, color: Colors.white70),
                     ),
                   ],
@@ -189,7 +189,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       vertical: 10,
                     ),
                     decoration: BoxDecoration(
-                      color: isMe ? const Color(0xFF4C53A5) : Colors.white,
+                      color: isMe ? const Color(0xFF2E7D32) : Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: const Radius.circular(16),
                         topRight: const Radius.circular(16),
@@ -269,7 +269,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: const Color(0xFF4C53A5).withValues(alpha: 0.3),
+                        color: const Color(0xFF2E7D32).withValues(alpha: 0.3),
                       ),
                     ),
                     child: Center(
@@ -277,7 +277,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         qr,
                         style: const TextStyle(
                           fontSize: 12,
-                          color: Color(0xFF4C53A5),
+                          color: Color(0xFF2E7D32),
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -306,7 +306,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: [
                   IconButton(
                     icon: const Icon(Icons.add_photo_alternate_outlined),
-                    color: const Color(0xFF4C53A5),
+                    color: const Color(0xFF2E7D32),
                     onPressed: () {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
@@ -340,7 +340,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   const SizedBox(width: 8),
                   Container(
                     decoration: const BoxDecoration(
-                      color: Color(0xFF4C53A5),
+                      color: Color(0xFF2E7D32),
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
@@ -358,3 +358,4 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 }
+

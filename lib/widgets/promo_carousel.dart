@@ -16,7 +16,7 @@ class _PromoCarouselState extends State<PromoCarousel> {
       'title': 'Mega Flash Sale 50%',
       'subtitle': 'Pakan Ternak Super Berkualitas',
       'code': 'DISKON50',
-      'colors': [Color(0xFF4C53A5), Color(0xFF7A88DE)],
+      'colors': [Color(0xFF2E7D32), Color(0xFF66BB6A)],
       'icon': Icons.bolt,
     },
     {
@@ -145,7 +145,7 @@ class _PromoCarouselState extends State<PromoCarousel> {
               height: 6,
               decoration: BoxDecoration(
                 color: _currentPage == index
-                    ? const Color(0xFF4C53A5)
+                    ? const Color(0xFF2E7D32)
                     : Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(3),
               ),

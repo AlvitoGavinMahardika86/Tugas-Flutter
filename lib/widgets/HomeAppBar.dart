@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
@@ -30,7 +30,7 @@ class HomeAppBar extends StatelessWidget {
               padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(color: const Color(0xFF4C53A5), width: 2),
+                border: Border.all(color: const Color(0xFF2E7D32), width: 2),
               ),
               child: const CircleAvatar(
                 radius: 20,
@@ -56,7 +56,7 @@ class HomeAppBar extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF4C53A5),
+                      color: Color(0xFF2E7D32),
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -69,7 +69,7 @@ class HomeAppBar extends StatelessWidget {
               icon: badges.Badge(
                 showBadge: appState.wishlistCount > 0,
                 badgeStyle: const badges.BadgeStyle(
-                  badgeColor: Color(0xFF4C53A5),
+                  badgeColor: Color(0xFFD32F2F),
                   padding: EdgeInsets.all(5),
                 ),
                 badgeContent: Text(
@@ -79,7 +79,7 @@ class HomeAppBar extends StatelessWidget {
                 child: const Icon(
                   Icons.favorite_border,
                   size: 26,
-                  color: Color(0xFF4C53A5),
+                  color: Color(0xFFD32F2F),
                 ),
               ),
               onPressed: () {
@@ -101,7 +101,7 @@ class HomeAppBar extends StatelessWidget {
                 child: const Icon(
                   Icons.notifications_none_outlined,
                   size: 26,
-                  color: Color(0xFF4C53A5),
+                  color: Color(0xFF2E7D32),
                 ),
               ),
               onPressed: () {
@@ -112,7 +112,7 @@ class HomeAppBar extends StatelessWidget {
             IconButton(
               icon: badges.Badge(
                 badgeStyle: const badges.BadgeStyle(
-                  badgeColor: Color(0xFF7D8DEB),
+                  badgeColor: Color(0xFF66BB6A),
                   padding: EdgeInsets.all(5),
                 ),
                 badgeContent: const Text(
@@ -122,7 +122,7 @@ class HomeAppBar extends StatelessWidget {
                 child: const Icon(
                   Icons.chat_bubble_outline_rounded,
                   size: 26,
-                  color: Color(0xFF4C53A5),
+                  color: Color(0xFF2E7D32),
                 ),
               ),
               onPressed: () {

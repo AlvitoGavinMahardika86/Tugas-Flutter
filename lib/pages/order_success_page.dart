@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import '../models/order_model.dart';
 import '../utils/formatters.dart';
 
@@ -80,7 +80,7 @@ class OrderSuccessPage extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                             ),
                           ),
                         ],
@@ -115,7 +115,7 @@ class OrderSuccessPage extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                             ),
                           ),
                         ],
@@ -148,7 +148,7 @@ class OrderSuccessPage extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4C53A5),
+                    backgroundColor: const Color(0xFF2E7D32),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
@@ -172,8 +172,8 @@ class OrderSuccessPage extends StatelessWidget {
                 width: double.infinity,
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
-                    foregroundColor: const Color(0xFF4C53A5),
-                    side: const BorderSide(color: Color(0xFF4C53A5)),
+                    foregroundColor: const Color(0xFF2E7D32),
+                    side: const BorderSide(color: Color(0xFF2E7D32)),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
@@ -200,3 +200,4 @@ class OrderSuccessPage extends StatelessWidget {
     );
   }
 }
+

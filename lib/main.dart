@@ -37,8 +37,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF4C53A5),
-          primary: const Color(0xFF4C53A5),
+          // Primary color changed to match BangKumis logo green
+          seedColor: const Color(0xFF2E7D32),
+          primary: const Color(0xFF2E7D32),
           surface: Colors.white,
         ),
         scaffoldBackgroundColor: const Color(0xFFF8F9FE),
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF4C53A5),
+            backgroundColor: const Color(0xFF2E7D32),
             foregroundColor: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../utils/formatters.dart';
@@ -60,7 +60,7 @@ class WishlistPage extends StatelessWidget {
                   const SizedBox(height: 20),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF4C53A5),
+                      backgroundColor: const Color(0xFF2E7D32),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 24,
@@ -145,7 +145,7 @@ class WishlistPage extends StatelessWidget {
                                 CurrencyHelper.formatRupiah(product.price),
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Color(0xFF4C53A5),
+                                  color: Color(0xFF2E7D32),
                                   fontSize: 14,
                                 ),
                               ),
@@ -166,7 +166,7 @@ class WishlistPage extends StatelessWidget {
                           ),
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF4C53A5),
+                              backgroundColor: const Color(0xFF2E7D32),
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 12,
@@ -182,7 +182,7 @@ class WishlistPage extends StatelessWidget {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                   content: Text(
-                                    '🛍️ ${product.name} masuk keranjang',
+                                    'ðŸ›ï¸ ${product.name} masuk keranjang',
                                   ),
                                   behavior: SnackBarBehavior.floating,
                                 ),
@@ -206,3 +206,4 @@ class WishlistPage extends StatelessWidget {
     );
   }
 }
+

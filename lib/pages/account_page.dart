@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../utils/formatters.dart';
@@ -43,8 +43,8 @@ class AccountPage extends StatelessWidget {
               children: amounts.map((amt) {
                 return ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4C53A5).withValues(alpha: 0.1),
-                    foregroundColor: const Color(0xFF4C53A5),
+                    backgroundColor: const Color(0xFF2E7D32).withValues(alpha: 0.1),
+                    foregroundColor: const Color(0xFF2E7D32),
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -56,7 +56,7 @@ class AccountPage extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          '✅ Berhasil Top Up ${CurrencyHelper.formatRupiah(amt)}!',
+                          'âœ… Berhasil Top Up ${CurrencyHelper.formatRupiah(amt)}!',
                         ),
                         backgroundColor: Colors.green,
                         behavior: SnackBarBehavior.floating,
@@ -102,14 +102,14 @@ class AccountPage extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
-                  colors: [Color(0xFF4C53A5), Color(0xFF6B7CDA)],
+                  colors: [Color(0xFF2E7D32), Color(0xFF66BB6A)],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.circular(20.0),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF4C53A5).withValues(alpha: 0.3),
+                    color: const Color(0xFF2E7D32).withValues(alpha: 0.3),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
@@ -194,12 +194,12 @@ class AccountPage extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF4C53A5).withValues(alpha: 0.1),
+                      color: const Color(0xFF2E7D32).withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Icon(
                       Icons.account_balance_wallet,
-                      color: Color(0xFF4C53A5),
+                      color: Color(0xFF2E7D32),
                       size: 28,
                     ),
                   ),
@@ -232,7 +232,7 @@ class AccountPage extends StatelessWidget {
                     icon: const Icon(Icons.add, size: 16),
                     label: const Text('Top Up'),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF4C53A5),
+                      backgroundColor: const Color(0xFF2E7D32),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 14,
@@ -332,10 +332,10 @@ class AccountPage extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF4C53A5).withValues(alpha: 0.08),
+                  color: const Color(0xFF2E7D32).withValues(alpha: 0.08),
                   shape: BoxShape.circle,
                 ),
-                child: Icon(icon, color: const Color(0xFF4C53A5), size: 22),
+                child: Icon(icon, color: const Color(0xFF2E7D32), size: 22),
               ),
               if (badgeCount != null && badgeCount > 0)
                 Positioned(
@@ -433,7 +433,7 @@ class AccountPage extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        color: iconColor ?? const Color(0xFF4C53A5),
+        color: iconColor ?? const Color(0xFF2E7D32),
         size: 22,
       ),
       title: Text(
@@ -493,3 +493,4 @@ class AccountPage extends StatelessWidget {
     );
   }
 }
+

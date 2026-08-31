@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../utils/formatters.dart';
@@ -42,7 +42,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
     {
       'name': 'BangKumis Pay (Saldo)',
       'icon': Icons.account_balance_wallet,
-      'color': Color(0xFF4C53A5),
+      'color': Color(0xFF2E7D32),
     },
     {
       'name': 'GoPay / QRIS Digital',
@@ -130,7 +130,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             children: [
                               Icon(
                                 Icons.location_on,
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                                 size: 20,
                               ),
                               SizedBox(width: 6),
@@ -150,14 +150,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             },
                             child: const Text(
                               'Ubah',
-                              style: TextStyle(color: Color(0xFF4C53A5)),
+                              style: TextStyle(color: Color(0xFF2E7D32)),
                             ),
                           ),
                         ],
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        '${appState.userName} • (${appState.userPhone})',
+                        '${appState.userName} â€¢ (${appState.userPhone})',
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 13,
@@ -244,7 +244,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 CurrencyHelper.formatRupiah(item.totalPrice),
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Color(0xFF4C53A5),
+                                  color: Color(0xFF2E7D32),
                                   fontSize: 13,
                                 ),
                               ),
@@ -277,7 +277,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         children: [
                           Icon(
                             Icons.local_shipping_outlined,
-                            color: Color(0xFF4C53A5),
+                            color: Color(0xFF2E7D32),
                             size: 20,
                           ),
                           SizedBox(width: 8),
@@ -306,12 +306,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? const Color(0xFF4C53A5).withValues(alpha: 0.05)
+                                  ? const Color(0xFF2E7D32).withValues(alpha: 0.05)
                                   : Colors.grey.shade50,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: isSelected
-                                    ? const Color(0xFF4C53A5)
+                                    ? const Color(0xFF2E7D32)
                                     : Colors.grey.shade200,
                               ),
                             ),
@@ -322,7 +322,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                       ? Icons.radio_button_checked
                                       : Icons.radio_button_off,
                                   color: isSelected
-                                      ? const Color(0xFF4C53A5)
+                                      ? const Color(0xFF2E7D32)
                                       : Colors.grey,
                                   size: 20,
                                 ),
@@ -393,7 +393,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             children: [
                               Icon(
                                 Icons.payment_outlined,
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                                 size: 20,
                               ),
                               SizedBox(width: 8),
@@ -432,12 +432,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? const Color(0xFF4C53A5).withValues(alpha: 0.05)
+                                  ? const Color(0xFF2E7D32).withValues(alpha: 0.05)
                                   : Colors.grey.shade50,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: isSelected
-                                    ? const Color(0xFF4C53A5)
+                                    ? const Color(0xFF2E7D32)
                                     : Colors.grey.shade200,
                               ),
                             ),
@@ -448,7 +448,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                       ? Icons.radio_button_checked
                                       : Icons.radio_button_off,
                                   color: isSelected
-                                      ? const Color(0xFF4C53A5)
+                                      ? const Color(0xFF2E7D32)
                                       : Colors.grey,
                                   size: 20,
                                 ),
@@ -569,7 +569,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
-                              color: Color(0xFF4C53A5),
+                              color: Color(0xFF2E7D32),
                             ),
                           ),
                         ],
@@ -611,14 +611,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF4C53A5),
+                      color: Color(0xFF2E7D32),
                     ),
                   ),
                 ],
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF4C53A5),
+                  backgroundColor: const Color(0xFF2E7D32),
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
                   shape: RoundedRectangleBorder(
@@ -674,7 +674,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF4C53A5),
+              backgroundColor: const Color(0xFF2E7D32),
               foregroundColor: Colors.white,
             ),
             onPressed: () {
@@ -695,3 +695,4 @@ class _CheckoutPageState extends State<CheckoutPage> {
     );
   }
 }
+

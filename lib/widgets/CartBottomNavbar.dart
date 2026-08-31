@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../utils/formatters.dart';
@@ -85,7 +85,7 @@ class CartBottomNavBar extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF2E7D32),
                       ),
                     ),
                   ],
@@ -97,7 +97,7 @@ class CartBottomNavBar extends StatelessWidget {
                           Navigator.pushNamed(context, 'CheckoutPage');
                         },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4C53A5),
+                    backgroundColor: const Color(0xFF2E7D32),
                     disabledBackgroundColor: Colors.grey.shade300,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(

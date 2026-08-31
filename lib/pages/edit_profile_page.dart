@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 
@@ -69,7 +69,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: const Color(0xFF4C53A5),
+                          color: const Color(0xFF2E7D32),
                           width: 3,
                         ),
                       ),
@@ -84,7 +84,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       child: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: const BoxDecoration(
-                          color: Color(0xFF4C53A5),
+                          color: Color(0xFF2E7D32),
                           shape: BoxShape.circle,
                         ),
                         child: const Icon(
@@ -141,7 +141,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4C53A5),
+                    backgroundColor: const Color(0xFF2E7D32),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
@@ -158,7 +158,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       );
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text('✅ Profil berhasil diperbarui!'),
+                          content: Text('âœ… Profil berhasil diperbarui!'),
                           backgroundColor: Colors.green,
                           behavior: SnackBarBehavior.floating,
                         ),
@@ -205,7 +205,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
         validator: validator,
         decoration: InputDecoration(
           labelText: label,
-          prefixIcon: Icon(icon, color: const Color(0xFF4C53A5)),
+          prefixIcon: Icon(icon, color: const Color(0xFF2E7D32)),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
             borderSide: BorderSide(color: Colors.grey.shade200),
@@ -216,10 +216,11 @@ class _EditProfilePageState extends State<EditProfilePage> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
-            borderSide: const BorderSide(color: Color(0xFF4C53A5), width: 1.5),
+            borderSide: const BorderSide(color: Color(0xFF2E7D32), width: 1.5),
           ),
         ),
       ),
     );
   }
 }
+

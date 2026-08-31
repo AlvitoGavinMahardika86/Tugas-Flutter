@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
 import '../models/product_model.dart';
@@ -54,7 +54,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           SliverAppBar(
             expandedHeight: 320,
             pinned: true,
-            backgroundColor: const Color(0xFF4C53A5),
+            backgroundColor: const Color(0xFF2E7D32),
             foregroundColor: Colors.white,
             leading: IconButton(
               icon: Container(
@@ -89,7 +89,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       content: Text(
                         isFav
                             ? 'Dihapus dari wishlist'
-                            : '❤️ Ditambahkan ke wishlist',
+                            : 'â¤ï¸ Ditambahkan ke wishlist',
                       ),
                       duration: const Duration(seconds: 1),
                       behavior: SnackBarBehavior.floating,
@@ -190,13 +190,13 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF4C53A5).withValues(alpha: 0.1),
+                          color: const Color(0xFF2E7D32).withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
                           _product.category,
                           style: const TextStyle(
-                            color: Color(0xFF4C53A5),
+                            color: Color(0xFF2E7D32),
                             fontWeight: FontWeight.bold,
                             fontSize: 12,
                           ),
@@ -257,7 +257,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         ),
                       ),
                       Text(
-                        ' (${_product.reviewCount} ulasan) • Terjual 1.2rb+',
+                        ' (${_product.reviewCount} ulasan) â€¢ Terjual 1.2rb+',
                         style: TextStyle(
                           color: Colors.grey.shade600,
                           fontSize: 13,
@@ -276,7 +276,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         style: const TextStyle(
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                          color: Color(0xFF2E7D32),
                         ),
                       ),
                       if (_product.originalPrice > _product.price) ...[
@@ -326,12 +326,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             ),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? const Color(0xFF4C53A5)
+                                  ? const Color(0xFF2E7D32)
                                   : Colors.grey.shade100,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: isSelected
-                                    ? const Color(0xFF4C53A5)
+                                    ? const Color(0xFF2E7D32)
                                     : Colors.grey.shade300,
                               ),
                             ),
@@ -426,10 +426,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF4C53A5).withValues(alpha: 0.05),
+                      color: const Color(0xFF2E7D32).withValues(alpha: 0.05),
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: const Color(0xFF4C53A5).withValues(alpha: 0.2),
+                        color: const Color(0xFF2E7D32).withValues(alpha: 0.2),
                       ),
                     ),
                     child: Row(
@@ -452,7 +452,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                                 ),
                               ),
                               const Text(
-                                'Online • Pengiriman Cepat • Garansi 100%',
+                                'Online â€¢ Pengiriman Cepat â€¢ Garansi 100%',
                                 style: TextStyle(
                                   fontSize: 11,
                                   color: Colors.grey,
@@ -470,8 +470,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             );
                           },
                           style: OutlinedButton.styleFrom(
-                            foregroundColor: const Color(0xFF4C53A5),
-                            side: const BorderSide(color: Color(0xFF4C53A5)),
+                            foregroundColor: const Color(0xFF2E7D32),
+                            side: const BorderSide(color: Color(0xFF2E7D32)),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
@@ -508,13 +508,13 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               // Chat seller button
               Container(
                 decoration: BoxDecoration(
-                  border: Border.all(color: const Color(0xFF4C53A5)),
+                  border: Border.all(color: const Color(0xFF2E7D32)),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: IconButton(
                   icon: const Icon(
                     Icons.chat_outlined,
-                    color: Color(0xFF4C53A5),
+                    color: Color(0xFF2E7D32),
                   ),
                   onPressed: () {
                     Navigator.pushNamed(
@@ -533,8 +533,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   icon: const Icon(Icons.add_shopping_cart, size: 18),
                   label: const Text('+ Keranjang'),
                   style: OutlinedButton.styleFrom(
-                    foregroundColor: const Color(0xFF4C53A5),
-                    side: const BorderSide(color: Color(0xFF4C53A5), width: 1.5),
+                    foregroundColor: const Color(0xFF2E7D32),
+                    side: const BorderSide(color: Color(0xFF2E7D32), width: 1.5),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -549,7 +549,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          '🛍️ $_quantity ${_product.name} dimasukkan ke keranjang',
+                          'ðŸ›ï¸ $_quantity ${_product.name} dimasukkan ke keranjang',
                         ),
                         action: SnackBarAction(
                           label: 'Lihat Keranjang',
@@ -568,7 +568,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               Expanded(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4C53A5),
+                    backgroundColor: const Color(0xFF2E7D32),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
@@ -597,3 +597,4 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
     );
   }
 }
+

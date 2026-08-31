@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../models/order_model.dart';
@@ -83,9 +83,9 @@ class _OrderHistoryPageState extends State<OrderHistoryPage>
         ),
         bottom: TabBar(
           controller: _tabController,
-          labelColor: const Color(0xFF4C53A5),
+          labelColor: const Color(0xFF2E7D32),
           unselectedLabelColor: Colors.grey,
-          indicatorColor: const Color(0xFF4C53A5),
+          indicatorColor: const Color(0xFF2E7D32),
           indicatorWeight: 3,
           labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
           tabs: _tabs.map((tab) => Tab(text: tab)).toList(),
@@ -158,7 +158,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage>
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14,
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                               ),
                             ),
                             Text(
@@ -222,7 +222,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage>
                                     ),
                                   ),
                                   Text(
-                                    '${item.selectedVariant} • ${item.quantity}x',
+                                    '${item.selectedVariant} â€¢ ${item.quantity}x',
                                     style: TextStyle(
                                       fontSize: 11,
                                       color: Colors.grey.shade600,
@@ -279,7 +279,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage>
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
-                                color: Color(0xFF4C53A5),
+                                color: Color(0xFF2E7D32),
                               ),
                             ),
                           ],
@@ -296,3 +296,4 @@ class _OrderHistoryPageState extends State<OrderHistoryPage>
     );
   }
 }
+

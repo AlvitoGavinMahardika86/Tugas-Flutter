@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:badges/badges.dart' as badges;
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-        color: const Color(0xFF4C53A5),
+        color: const Color(0xFF2E7D32),
         height: 65.0,
         animationDuration: const Duration(milliseconds: 300),
         items: [
@@ -191,13 +191,13 @@ class _HomePageContentState extends State<HomePageContent> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
             gradient: const LinearGradient(
-              colors: [Color(0xFF4C53A5), Color(0xFF7D8DEB)],
+              colors: [Color(0xFF2E7D32), Color(0xFF66BB6A)],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF4C53A5).withValues(alpha: 0.25),
+                color: const Color(0xFF2E7D32).withValues(alpha: 0.25),
                 blurRadius: 18,
                 offset: const Offset(0, 8),
               ),
@@ -291,7 +291,7 @@ class _HomePageContentState extends State<HomePageContent> {
                         'Produk',
                         '${appState.allProducts.length}',
                         Icons.inventory_2,
-                        const Color(0xFF4C53A5),
+                        const Color(0xFF2E7D32),
                       ),
                     ),
                     SizedBox(
@@ -322,7 +322,7 @@ class _HomePageContentState extends State<HomePageContent> {
                     'Produk',
                     '${appState.allProducts.length}',
                     Icons.inventory_2,
-                    const Color(0xFF4C53A5),
+                    const Color(0xFF2E7D32),
                   ),
                   const SizedBox(width: 10),
                   _buildQuickStat(
@@ -360,7 +360,7 @@ class _HomePageContentState extends State<HomePageContent> {
           ),
           child: Row(
             children: [
-              const Icon(Icons.search, size: 22, color: Color(0xFF4C53A5)),
+              const Icon(Icons.search, size: 22, color: Color(0xFF2E7D32)),
               const SizedBox(width: 10),
               Expanded(
                 child: TextField(
@@ -473,7 +473,7 @@ class _HomePageContentState extends State<HomePageContent> {
                       Text(
                         'Rp ${product.price.toStringAsFixed(0).replaceAllMapped(RegExp(r"(\d)(?=(\d{3})+(?!\d))"), (m) => "${m[1]}.")}',
                         style: const TextStyle(
-                          color: Color(0xFF4C53A5),
+                          color: Color(0xFF2E7D32),
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
@@ -507,14 +507,14 @@ class _HomePageContentState extends State<HomePageContent> {
                   child: const Text(
                     'Reset Filter',
                     style: TextStyle(
-                      color: Color(0xFF4C53A5),
+                      color: Color(0xFF2E7D32),
                       fontSize: 12.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               PopupMenuButton<ProductSortOption>(
-                icon: const Icon(Icons.sort_rounded, color: Color(0xFF4C53A5)),
+                icon: const Icon(Icons.sort_rounded, color: Color(0xFF2E7D32)),
                 tooltip: 'Urutkan produk',
                 onSelected: appState.setSort,
                 itemBuilder: (context) => const [
@@ -566,7 +566,7 @@ class _HomePageContentState extends State<HomePageContent> {
                       vertical: 2,
                     ),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF4C53A5).withValues(alpha: 0.1),
+                      color: const Color(0xFF2E7D32).withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -574,13 +574,13 @@ class _HomePageContentState extends State<HomePageContent> {
                       style: const TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF4C53A5),
+                        color: Color(0xFF2E7D32),
                       ),
                     ),
                   ),
                 ],
               ),
-              const Icon(Icons.tune_rounded, size: 20, color: Color(0xFF4C53A5)),
+              const Icon(Icons.tune_rounded, size: 20, color: Color(0xFF2E7D32)),
             ],
           ),
         ),

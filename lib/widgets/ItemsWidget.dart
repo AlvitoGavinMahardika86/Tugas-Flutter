@@ -44,29 +44,34 @@ class ItemsWidget extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = constraints.maxWidth;
+        // Increase tile width and adjust aspect ratio for better readability on small screens
         final maxCrossAxisExtent = width < 360
-            ? 180.0
+            ? 200.0
             : width < 600
-                ? 220.0
+                ? 260.0
                 : width < 900
-                    ? 260.0
-                    : 300.0;
+                    ? 300.0
+                    : 360.0;
         final childAspectRatio = width < 360
-            ? 0.68
+            ? 0.75
             : width < 600
-                ? 0.72
+                ? 0.82
                 : width < 900
-                    ? 0.8
-                    : 0.92;
+                    ? 0.95
+                    : 1.05;
+
+        // Use fixed cross axis count with a fixed main axis extent to avoid tile height overflow
+        final crossAxisCount = width < 360 ? 2 : width < 900 ? 2 : 3;
+        final tileHeight = width < 360 ? 320.0 : width < 600 ? 340.0 : 380.0;
 
         return GridView.builder(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           itemCount: products.length,
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: maxCrossAxisExtent,
-            childAspectRatio: childAspectRatio,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            mainAxisExtent: tileHeight,
             crossAxisSpacing: 12,
             mainAxisSpacing: 12,
           ),
@@ -100,7 +105,8 @@ class ItemsWidget extends StatelessWidget {
                     Stack(
                       children: [
                         Container(
-                          height: 135,
+                          // Adjusted image height to avoid vertical overflow on small screens
+                          height: 150,
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.grey.shade50,
@@ -152,7 +158,7 @@ class ItemsWidget extends StatelessWidget {
                             constraints: const BoxConstraints(),
                             icon: Icon(
                               isFav ? Icons.favorite : Icons.favorite_border,
-                              color: isFav ? const Color(0xFF4C53A5) : Colors.grey.shade600,
+                              color: isFav ? const Color(0xFFD32F2F) : Colors.grey.shade600,
                             ),
                             onPressed: () {
                               appState.toggleFavorite(product.id);
@@ -174,7 +180,7 @@ class ItemsWidget extends StatelessWidget {
                       ],
                     ),
 
-                    Expanded(
+                    Flexible(fit: FlexFit.loose,
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Column(
@@ -263,7 +269,7 @@ class ItemsWidget extends StatelessWidget {
                                         style: const TextStyle(
                                           fontSize: 13,
                                           fontWeight: FontWeight.bold,
-                                          color: Color(0xFF4C53A5),
+                                          color: Color(0xFF2E7D32),
                                         ),
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
@@ -295,7 +301,7 @@ class ItemsWidget extends StatelessWidget {
                                   child: Container(
                                     padding: const EdgeInsets.all(6),
                                     decoration: BoxDecoration(
-                                      color: const Color(0xFF4C53A5),
+                                      color: const Color(0xFF2E7D32),
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Icon(
